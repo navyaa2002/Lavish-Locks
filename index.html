@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+    <style>
+        *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+  
+}
+label.logo{
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul{
+  float: right;
+  margin-right: 450px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: lightpink;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: lavender;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: rgb(196, 98, 196);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  section p{
+    display: none;
+  }
+  
+}
+
+section{
+  background: url(girl1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  padding-top: 8vw;
+  padding-left: 4vw;
+}
+section p{
+  font-size: 9vw;
+  font-family: 'STIX Two Text', serif;
+  
+}
+
+
+  
+
+    </style>
+    <title>Lavish Locks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <label class="logo">Lavish Locks</label>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      
+      <ul>
+        <li><a href="#" class="active" target="_blank">HOME</a></li>
+        <li><a href="blog.html" target="_blank">BLOG</a></li>
+        <li><a href="#" target="_blank">FEATURES</a></li>
+        <li><a href="gallery.html" target="_blank">GALLERY</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT</a></li>
+        
+    </ul>
+    </nav>
+    <section>
+       <p>LAVISH <br> LOCKS</p> 
+      </section>
+    
+  </body>
+</html>
